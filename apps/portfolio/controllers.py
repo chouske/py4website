@@ -38,8 +38,7 @@ from .common import (T, auth, authenticated, cache, db, flash, logger, session,
 def index():
     user = auth.get_user()
     message = T("Hello {first_name}").format(**user) if user else T("Hello")
-    print(URL("index.htm"))
-    return dict(message="bop")
+    return dict()
 @action("project1")
 @action.uses("index.html", auth, T)
 def project1():

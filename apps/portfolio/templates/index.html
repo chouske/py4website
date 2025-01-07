@@ -10,21 +10,53 @@
             width: 600px;
             height: 200px;
         }
-        .aboutme {
+        .topright {
           font-size: 40px;
+          text-align:right;     
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          gap: 0px;
+          position: absolute;
+          right: 20px;
+        }
+        .header-container {
+                display: flex;         
+                justify-content: space-between;
+                align-items: flex-start;  
+        }
+        body {
+                background-image: url("portfolio/static/media/clouds.jpg");
+                height: 100vh;
+                width: 100vw;
+        }
+        p {
+                font-size: 40px;
+        }
+        * {
+                font-family: "Trebuchet";
+                color: black;
         }
     </style>
 </head>
+<!--body style="background-color: #1c87c9; height: 100vh;"-->
 <body>
-	<header class="aboutme">
-		This is the portfolio of Chase Houske <br>
-    I'm a graduate of the computer science game design program at UC Santa Cruz
+	<header>
+                <div class="header-container">
+                        <div class="aboutme">
+                        <p>This is the portfolio of Chase Houske </p>
+                        <p>I'm a graduate of the computer science</p>
+                        </div>
+                        <div class="topright">
+                                <a href="https://github.com/chouske">My github</a>
+                                <a href="mailto:chouske@ucsc.edu">Contact me</a>
+                        </div>
+                </div>
 	</header>
   <section class="links">
-		<a href="www.google.com">google.com</a>
 	</section>
 	<section class="top">
-		<img class="mycat" src="fishingcat-002_0.webp">	
+		<!--img class="mycat" src="fishingcat-002_0.webp"-->	
 	</section>
 	<section class="bottom">
 	<div class="columns">
@@ -97,8 +129,7 @@
 	</div>	
 	</section>
 	<footer>
-		<a href="https://github.com/ucsc2024-cse183/class_code">Class Code</a>
-		<a href="mailto:chouske@ucsc.edu"> Chase Houske</a>
+                
 	</footer>
 </body>
 </html>
