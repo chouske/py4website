@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                background-image: url("/portfolio/static/media/background.jpg");
+                height: 100vh;
+                width: 100vw;
+        }
+        #rightbar {
+            position: fixed;
+            background-color: rgba(255, 255, 255, 0.4);
+            left:250px;
+            right:0;
+            height: 100vh;
+            font-size: 50px;
+            font-family: system-ui;
+        }   
+        #sidebar {
+                position: fixed;
+                /*backdrop-filter: blur(5px);*/
+                height:100vh;
+                width: 250px;
+                background-color: rgba(255, 255, 255, 0.5);
+        }
+        #assignments{
+            font-size: 40px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+  <body>
+    <div id=inner>
+        <div id="sidebar">
+            <h1>This is the Graphics page</h1>
+            [[block backto]]
+            <a href="[[=URL('')]]">← Back to Index</a>
+            [[end]]
+            <div id="assignments">
+                <div><a href="[[=URL('graphics/asgn0')]]">Assignment 0</a> </div>
+                <div><a href="[[=URL('graphics/asgn1')]]">Assignment 1</a> </div>
+                <div><a href="[[=URL('graphics/asgn2')]]">Assignment 2</a></div>
+                <div><a href="[[=URL('graphics/asgn3')]]">Assignment 3</a></div>
+                <div><a href="[[=URL('graphics/asgn4')]]">Assignment 4</a></div>
+                <div><a href="[[=URL('graphics/asgn5')]]">Assignment 5</a></div>
+            </div>
+        </div>
+        <div id="rightbar">
+            <div id=content>
+            [[block content]]   
+                I took a computer graphics class, cse 160, which used webgl. It was hard and I didn't do amazing in the class but still did all the assignments without major issues. A decent amount of the code
+                was from video tutorials from our teacher, so this isn't my most self-made, unique work, but I still had to figure out and create some things myself
+            [[end]]
+            </div>
+            <div id="link">
+                [[block link]]
+
+                [[end]]
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

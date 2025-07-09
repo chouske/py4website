@@ -38,8 +38,33 @@ from .common import (T, auth, authenticated, cache, db, flash, logger, session,
 def index():
     user = auth.get_user()
     message = T("Hello {first_name}").format(**user) if user else T("Hello")
+    print("Serving index route")
     return dict()
-@action("project1")
-@action.uses("index.html", auth, T)
-def project1():
+@action("graphics")
+@action.uses("graphics.html", auth, T)
+def graphics():
+    return locals()
+@action("graphics/asgn0")
+@action.uses("graphics0.html", auth, T)
+def graphics():
+    return locals()
+@action("graphics/asgn1")
+@action.uses("graphics1.html", auth, T)
+def graphics():
+    return locals()
+@action("graphics/asgn2")
+@action.uses("graphics2.html", auth, T)
+def graphics():
+    return locals()
+@action("graphics/asgn3")
+@action.uses("graphics3.html", auth, T)
+def graphics():
+    return locals()
+@action("graphics/asgn4")
+@action.uses("graphics4.html", auth, T)
+def graphics():
+    return locals()
+@action("graphics/asgn5")
+@action.uses("graphics5.html", auth, T)
+def graphics():
     return locals()

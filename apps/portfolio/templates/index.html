@@ -11,22 +11,25 @@
             height: 200px;
         }
         .topright {
-          font-size: 40px;
-          text-align:right;     
-          display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-          gap: 0px;
-          position: absolute;
-          right: 20px;
+                font-size: 40px;
+                text-align: right;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding-right: 20px;
         }
         .header-container {
                 display: flex;         
                 justify-content: space-between;
                 align-items: flex-start;  
+                 background-color: rgba(255, 255, 255, 0.5); /* or use black with 0.5 for dark theme */
+                backdrop-filter: blur(5px);
+                padding: 1rem;
+                border-radius: 8px;
+
         }
         body {
-                background-image: url("portfolio/static/media/clouds.jpg");
+                background-image: url("/portfolio/static/media/background.jpg");
                 height: 100vh;
                 width: 100vw;
         }
@@ -34,7 +37,7 @@
                 font-size: 40px;
         }
         * {
-                font-family: "Trebuchet";
+                 font-family: system-ui;
                 color: black;
         }
     </style>
@@ -46,10 +49,12 @@
                         <div class="aboutme">
                         <p>This is the portfolio of Chase Houske </p>
                         <p>I'm a graduate of the computer science</p>
+                        <p>Here's some of the projects I've done</p>
                         </div>
                         <div class="topright">
                                 <a href="https://github.com/chouske">My github</a>
                                 <a href="mailto:chouske@ucsc.edu">Contact me</a>
+                                <a href="aboutme">About me</a>
                         </div>
                 </div>
 	</header>
@@ -63,22 +68,29 @@
 		<div class="column">
 			<div class="card">
 				<header class="card-header">
-					 <p class="card-header-title">primary</p>
+					 <p class="card-header-title">Geocaching game</p>
 				</header>
 				<div class="card-content">
-					Button 1
-					<button class="button is-primary">Primary button</button>
+                                        <img src="/portfolio/static/media/geocache.png">
+                                        <div class="has-text-right">
+					        <a href="https://chouske.github.io/cmpm-121-demo-3/" target="_blank">
+                                                        <button class="button is-primary"><b>Check it out</b></button>
+                                                </a>
+                                        </div>
 				</div>
 			</div>
 		</div>
 		<div class="column">
                         <div class="card">
                                 <header class="card-header">
-                                         <p class="card-header-title">link</p>
+                                         <p class="card-header-title">Graphics class assignments</p>
                                 </header>
                                 <div class="card-content">
-                                        Button 2
-                                        <button class="button is-link">Link button</button>
+                                        <div class="has-text-right">
+                                                <a href="[[=URL('graphics')]]">
+                                                        <button class="button is-link">Check it out</button>
+                                                </a>
+                                        </div>
                                 </div>
                         </div>
                 </div>
@@ -90,39 +102,6 @@
                                 <div class="card-content">
                                         Button 3
                                         <button class="button is-info">Info button</button>
-                                </div>
-                        </div>
-                </div>
-		<div class="column">
-                        <div class="card">
-                                <header class="card-header">
-                                         <p class="card-header-title">success</p>
-                                </header>
-                                <div class="card-content">
-                                        Button 4
-                                        <button class="button is-success">Success button</button>
-                                </div>
-                        </div>
-                </div>
-		<div class="column">
-                        <div class="card">
-                                <header class="card-header">
-                                         <p class="card-header-title">warning</p>
-                                </header>
-                                <div class="card-content">
-                                        Button 5
-					<button class="button is-warning ">Warning button</button>
-                                </div>
-                        </div>
-                </div>
-		<div class="column">
-                        <div class="card">
-                                <header class="card-header">
-                                         <p class="card-header-title">danger</p>
-                                </header>
-                                <div class="card-content">
-                                        Button 6
-                                        <button class="button is-danger">Danger button</button>
                                 </div>
                         </div>
                 </div>
