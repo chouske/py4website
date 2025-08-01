@@ -68,3 +68,27 @@ def graphics():
 @action.uses("graphics5.html", auth, T)
 def graphics():
     return locals()
+@action("memory")
+@action.uses("memory.html", auth, T)
+def graphics():
+    return locals()
+@action("memory/multithreaded-http-server")
+@action.uses("multithreaded-http-server.html", auth, T)
+def graphics():
+    return locals()
+@action("memory/cached-http-proxy-server")
+@action.uses("cached-http-proxy-server.html", auth, T)
+def graphics():
+    return locals()
+@action("aboutme")
+@action.uses("aboutme.html", auth, T)
+def graphics():
+    return locals()
+@action("unity")
+@action.uses("unity.html", auth, T)
+def graphics():
+    return locals()
+@action("unity/cardgame")
+@action.uses("unitycardgame.html", auth, T)
+def graphics():
+    return locals()

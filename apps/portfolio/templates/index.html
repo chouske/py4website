@@ -30,8 +30,10 @@
         }
         body {
                 background-image: url("/portfolio/static/media/background.jpg");
-                height: 100vh;
-                width: 100vw;
+                background-size: cover;
+                background-attachment: fixed;   
+                /*height: 100vh;
+                width: 100vqw;*/
         }
         p {
                 font-size: 40px;
@@ -53,8 +55,8 @@
                         </div>
                         <div class="topright">
                                 <a href="https://github.com/chouske">My github</a>
-                                <a href="mailto:chouske@ucsc.edu">Contact me</a>
-                                <a href="aboutme">About me</a>
+                                <a href="mailto:pawshouske@gmail.edu">Contact me</a>
+                                <a href="[[=URL('aboutme')]]">About me</a>
                         </div>
                 </div>
 	</header>
@@ -97,14 +99,33 @@
 		<div class="column">
                         <div class="card">
                                 <header class="card-header">
-                                         <p class="card-header-title">info</p>
+                                         <p class="card-header-title">Multithreading class assignments</p>
                                 </header>
                                 <div class="card-content">
-                                        Button 3
-                                        <button class="button is-info">Info button</button>
+                                        <a href="[[=URL('memory')]]">
+                                                <button class="button is-info">Check it out</button>
+                                        </a>
                                 </div>
                         </div>
                 </div>
+                
+	</div>	
+        <div class="columns">
+		<div class="column is-one-third">
+			<div class="card">
+				<header class="card-header">
+					 <p class="card-header-title">Unity Games</p>
+				</header>
+				<div class="card-content">
+                                        <img src="/portfolio/static/media/unity.png">
+                                        <div class="has-text-right">
+					        <a href="[[=URL('unity')]]">
+                                                        <button class="button is-primary"><b>Check it out</b></button>
+                                                </a>
+                                        </div>
+				</div>
+			</div>
+		</div>  
 	</div>	
 	</section>
 	<footer>

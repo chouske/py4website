@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                background-image: url("/portfolio/static/media/background.jpg");
+                height: 100vh;
+                width: 100vw;
+        }
+        #rightbar {
+            position: fixed;
+            background-color: rgba(255, 255, 255, 0.4);
+            left:250px;
+            right:0;
+            height: 100vh;
+            font-size: 50px;
+            font-family: system-ui;
+        }   
+        #sidebar {
+                position: fixed;
+                /*backdrop-filter: blur(5px);*/
+                height:100vh;
+                width: 250px;
+                background-color: rgba(255, 255, 255, 0.5);
+        }
+        #assignments{
+            font-size: 40px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+  <body>
+    <div id=inner>
+        <div id="sidebar">
+            <h1>This is the Memory page</h1>
+            [[block backto]]
+            <a href="[[=URL('')]]">← Back to Index</a>
+            [[end]]
+            <div id="assignments">
+                <div><a href="[[=URL('memory/multithreaded-http-server')]]">Multithreaded http server</a></div>
+                <div><a href="[[=URL('memory/cached-http-proxy-server')]]">Cached http proxy server</a></div>
+            </div>
+        </div>
+        <div id="rightbar">
+            <div id=content>
+            [[block content]]   
+                The most useful class I took taught us about multithreading and how to do it in C. Doing this alongside careful usage of variable locks allowed my programs to run much faster. Of course,
+                some starting code was given to use for most of the assignments
+            [[end]]
+            </div>
+            <div id="link">
+                [[block link]]
+
+                [[end]]
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
